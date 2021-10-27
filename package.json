@@ -1,0 +1,28 @@
+{
+  "name": "hellodjango",
+  "description": "Tutorial project from [Django's documentation](https://docs.djangoproject.com/en/3.2/intro/).",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:css": "tailwindcss -o polls/static/polls/styles/tailwind.css --watch",
+    "build": "npm-run-all build:css build:parcel",
+    "build:css": "tailwindcss -o polls/static/polls/styles/tailwind.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoslor/hellodjango.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcoslor/hellodjango/issues"
+  },
+  "homepage": "https://github.com/marcoslor/hellodjango#readme",
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.18",
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.17"
+  }
+}

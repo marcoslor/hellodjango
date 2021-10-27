@@ -1,4 +1,7 @@
-<h1>{{ question.question_text }}</h1>
+{% extends 'polls/header.html' %}
+{% block content %}
+
+<h1 class="text-2xl font-bold">{{ question.question_text }}</h1>
 
 <ul>
 {% for choice in question.choice_set.all %}
@@ -7,3 +10,5 @@
 </ul>
 
 <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+
+{% endblock %}
